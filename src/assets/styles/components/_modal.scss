@@ -1,0 +1,18 @@
+.modal-dialog {
+  .modal-header {
+    border-bottom: var(--bs-modal-header-border-width) solid #dee2e6;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .modal-footer {
+    border-top: var(--bs-modal-header-border-width) solid #dee2e6;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .modal-body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}

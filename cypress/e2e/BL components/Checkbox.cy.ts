@@ -1,0 +1,206 @@
+describe('BL UI Components - BLUICheckbox', function () {
+  it('Verify BL UI Checkbox', function () {
+    cy.LaunchURLandLogin()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--docs')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+
+    //Check box
+    cy.iframe('#storybook-preview-iframe')
+      .find(
+        '#story--components-checkbox--default--primary-inner>div>div>div>input'
+      )
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+    //Disabled
+    cy.iframe('#storybook-preview-iframe')
+      .find('#control-disabled')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+    cy.Scrolltop()
+    cy.wait(1000)
+    cy.iframe('#storybook-preview-iframe')
+      .find('#control-disabled')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+    cy.Scrolltop()
+    cy.wait(2000)
+
+    //Small
+    cy.iframe('#storybook-preview-iframe').find('#control-size').select('Small')
+    cy.wait(1000)
+    cy.Scrolltop()
+    cy.wait(1000)
+
+    //Uncheck
+    cy.iframe('#storybook-preview-iframe')
+      .find(
+        '#story--components-checkbox--default--primary-inner>div>div>div>input'
+      )
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+  })
+
+  //Default
+  it('Verify Default Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--default')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="1"]')
+      .click({ force: true })
+    cy.wait(1000)
+  })
+
+  //Checked
+  it('Verify Checked Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--checked')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="1"]')
+      .click({ force: true })
+    cy.wait(1000)
+  })
+
+  //Disabled
+  it('Verify Disabled Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--disabled')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+  })
+
+  //Disabled Checked
+  it('Verify Disabled Checked Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--disabled-checked')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="1"]')
+      .should('be.visible')
+    cy.wait(1000)
+  })
+
+  //Multiline Label Support
+  it('Verify Multiline Label Support Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--multiline-label-support')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="1"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="1"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+  })
+
+  //Multiple Checked
+  it('Verify Multiple Checked Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--multiple-checked')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="2"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="3"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+  })
+
+  //Multiple Options With Multi Lines
+  it('Verify Multiple Options With Multi Lines Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--multiple-options-with-multi-lines')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="2"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="3"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="1"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+  })
+
+  //Small Checkbox
+  it('Verify Small Checkbox Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--small-checkbox')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="1"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+  })
+
+  //Small Checked
+  it('Verify Small Checked Tab', function () {
+    cy.Reload()
+    cy.get('#components-checkbox').should('be.visible').click({ force: true })
+    cy.wait(2000)
+    cy.get('#components-checkbox--small-checked')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(2000)
+    cy.iframe('#storybook-preview-iframe')
+      .xpath('//*[@id="1"]')
+      .should('be.visible')
+      .click({ force: true })
+    cy.wait(1000)
+  })
+})

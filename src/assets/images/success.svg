@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+  <g id="success" transform="translate(-340 -401)">
+    <rect id="Rectangle_641" data-name="Rectangle 641" width="16" height="16" transform="translate(340 401)" fill="#23d9cb" opacity="0"/>
+    <path id="check-square-fill" d="M1.75,0A1.75,1.75,0,0,0,0,1.75v10.5A1.75,1.75,0,0,0,1.75,14h10.5A1.75,1.75,0,0,0,14,12.25V1.75A1.75,1.75,0,0,0,12.25,0Zm8.776,4.349a.656.656,0,0,1,.01.919L7.043,9.634a.656.656,0,0,1-.945.018L3.783,7.336a.656.656,0,1,1,.928-.928L6.543,8.24,9.582,4.368a.656.656,0,0,1,.945-.019Z" transform="translate(341 402)" fill="#28a745"/>
+  </g>
+</svg>

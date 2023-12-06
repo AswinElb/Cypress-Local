@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="meatball" transform="translate(-748.002 -257)">
+    <rect id="Background" width="24" height="24" transform="translate(748.002 257)" fill="#55eded" opacity="0"/>
+    <path id="three-dots-vertical" d="M12.038,22.731a2.769,2.769,0,1,1-2.769-2.769A2.769,2.769,0,0,1,12.038,22.731Zm0-9.231a2.769,2.769,0,1,1-2.769-2.769A2.769,2.769,0,0,1,12.038,13.5Zm0-9.231A2.769,2.769,0,1,1,9.269,1.5a2.769,2.769,0,0,1,2.769,2.769Z" transform="translate(750.502 255.5)" fill="#343a40"/>
+  </g>
+</svg>
