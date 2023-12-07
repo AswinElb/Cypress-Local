@@ -8,13 +8,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4 
+        uses: actions/checkout@v4
         
       - name: Cypress install
         uses: cypress-io/github-action@v6
-        
-      - name: Install NPM 
-        run: npm install
-        
-      - name: Execute Cypress scripts
-        run: npm start
+        with:
+          start: npm run e2e:chrome
